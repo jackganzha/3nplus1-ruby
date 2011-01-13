@@ -56,10 +56,6 @@ describe "3n + 1 problem solver" do
       @collatz.max_cycle_length_for_range(900..1000).should == 174
     end
 
-    it "for range 1..10_000_000" do
-      @collatz.max_cycle_length_for_range(1..10_000_000).should == 616
-    end
-
   end
 
 end

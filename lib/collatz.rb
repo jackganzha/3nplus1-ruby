@@ -6,11 +6,8 @@ class Collatz
 
   def cycle_length_for(number = 1)
     length = 1
-    while(number > 1)
-      length = length + 1
-      number = calculate_for(number)
-    end
-    length
+    length, number = length + 1, calculate_for(number) while number > 1
+    return length
   end
 
   def calculate_for(number)
